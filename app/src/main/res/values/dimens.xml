@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="logo_size">32dp</dimen>
+    <dimen name="dimen16">16dp</dimen>
+    <dimen name="dimen8">8dp</dimen>
+    <dimen name="dimen12">12dp</dimen>
+    <dimen name="dimen4">4dp</dimen>
+    <dimen name="dimen32">32dp</dimen>
+    <dimen name="login_rounded_corner_radius">6dp</dimen>
+    <dimen name="title_text_size">18sp</dimen>
+    <dimen name="cross_sell_item_card_radius">6dp</dimen>
+</resources>

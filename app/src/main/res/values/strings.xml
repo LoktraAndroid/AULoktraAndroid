@@ -1,0 +1,39 @@
+<resources>
+
+    <string name="app_name">AULoktra</string>
+    <string name="dummy_cd">Dummy content description</string>
+
+    <!--Login strings-->
+    <string name="login_screen_title">AU Login</string>
+    <string name="login_help">Help</string>
+    <string name="email_hint">Company email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button_text">Login</string>
+    <string name="login_show_button">Show</string>
+    <string name="login_hide_button">Hide</string>
+
+    <!--Home strings-->
+    <string name="action_sync">Sync Data</string>
+    <string name="action_profile">Profile</string>
+    <string name="action_logout">Logout</string>
+    <string name="home_screen_title">AU Small Finance Bank</string>
+    <string name="home_menu">Menu</string>
+    <string name="cross_sell_leads">Cross Sell Leads</string>
+    <string name="cross_sell_leads_sub">Leads referred by you to AU Bank</string>
+    <string name="leads_assigned">Leads assigned to you</string>
+    <string name="announcements_title">Announcements</string>
+    <string name="announcements_sub">News from groups, things etc.</string>
+    <string name="leaderboard_title">Leaderboard</string>
+    <string name="leaderboard_sub">Competitive performance reports</string>
+    <string name="bars_rejected">Rejected - %1$s (%2$s)</string>
+    <string name="bars_not_started">Not started - %1$s (%2$s)</string>
+    <string name="bars_pending">Pending - %1$s (%2$s)</string>
+    <string name="bars_completed">Completed - %1$s (%2$s)</string>
+    <string name="bars_total">Total - %1$s</string>
+
+    <!--Cross sell Leads strings-->
+    <string name="cross_sell_screen_title">Cross Sell Leads</string>
+    <string name="status_not_started">Not Started</string>
+    <string name="cross_lead_assigned_to">Assigned to %1$s</string>
+
+</resources>

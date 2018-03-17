@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="statusBar">#999999</color>
+
+    <color name="sign_in_purple">#6A0085</color>
+    <color name="sign_in_help">#F95700</color>
+    <color name="appBackground">#E3E3E3</color>
+    <color name="sign_in_show_gray">#707070</color>
+    <color name="sign_in_hint_text_color">#333333</color>
+
+    <color name="au_text_light">#87000000</color>
+    <color name="au_text_dark">#DF000000</color>
+    <color name="home_title_text">#ED691F</color>
+
+    <color name="rejected_bar_colour">#FF3333</color>
+    <color name="not_started_bar_colour">#FF7033</color>
+    <color name="pending_bar_colour">#5F5FFF</color>
+    <color name="completed_bar_colour">#33E283</color>
+
+
+</resources>

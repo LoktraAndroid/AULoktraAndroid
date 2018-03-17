@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen16"
+        android:elevation="@dimen/dimen4"
+        tools:showIn="@layout/activity_home">
+
+        <TextView
+            android:id="@+id/sync"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen8"
+            android:layout_marginEnd="@dimen/dimen16"
+            android:layout_marginRight="@dimen/dimen16"
+            android:text="@string/action_sync"
+            android:textColor="@color/au_text_light"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen8"
+            android:layout_marginEnd="@dimen/dimen16"
+            android:layout_marginRight="@dimen/dimen16"
+            android:text="@string/action_profile"
+            android:textColor="@color/au_text_light"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/dimen16"
+            android:layout_marginRight="@dimen/dimen16"
+            android:text="@string/action_logout"
+            android:textColor="@color/au_text_light"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</layout>

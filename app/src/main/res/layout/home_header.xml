@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@android:color/white"
+        android:elevation="@dimen/dimen4"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:showIn="@layout/activity_home">
+
+        <ImageView
+            android:layout_width="@dimen/logo_size"
+            android:layout_height="@dimen/logo_size"
+            android:layout_marginEnd="@dimen/dimen16"
+            android:layout_marginLeft="@dimen/dimen16"
+            android:layout_marginRight="@dimen/dimen16"
+            android:layout_marginStart="@dimen/dimen16"
+            android:contentDescription="@string/dummy_cd"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen8"
+            android:layout_marginLeft="@dimen/dimen8"
+            android:layout_marginRight="@dimen/dimen8"
+            android:layout_marginStart="@dimen/dimen8"
+            android:layout_weight="1"
+            android:text="@string/home_screen_title"
+            android:textColor="@color/home_title_text"
+            android:textSize="@dimen/title_text_size" />
+
+        <android.support.v7.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/home_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="@dimen/dimen16"
+            android:layout_marginLeft="@dimen/dimen16"
+            android:layout_marginRight="@dimen/dimen16"
+            android:layout_marginStart="@dimen/dimen16"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/logo_size"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen12"
+                    android:layout_marginLeft="@dimen/dimen12"
+                    android:layout_marginRight="@dimen/dimen12"
+                    android:layout_marginStart="@dimen/dimen12"
+                    android:text="@string/home_menu"
+                    android:textAllCaps="true"
+                    android:textColor="@color/au_text_light" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen8"
+                    android:layout_height="@dimen/dimen8"
+                    android:layout_marginEnd="@dimen/dimen12"
+                    android:layout_marginRight="@dimen/dimen12"
+                    android:contentDescription="@string/dummy_cd"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/drop_down_arrow" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</layout>

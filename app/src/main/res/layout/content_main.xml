@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.au.auloktra.ui.HomeActivity"
+        tools:showIn="@layout/activity_home">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cross_sell_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen4"
+            android:layout_marginEnd="@dimen/dimen8"
+            android:layout_marginLeft="@dimen/dimen8"
+            android:layout_marginRight="@dimen/dimen8"
+            android:layout_marginStart="@dimen/dimen8"
+            android:layout_marginTop="@dimen/dimen8"
+            android:background="@android:color/white"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen12">
+
+                <TextView
+                    android:id="@+id/cross_sell_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cross_sell_leads"
+                    android:textAllCaps="true"
+                    android:textColor="@color/au_text_dark"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/cross_sell_sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cross_sell_title"
+                    android:text="@string/cross_sell_leads_sub"
+                    android:textColor="@color/au_text_light"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen32"
+                    android:layout_height="@dimen/dimen32"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:contentDescription="@string/dummy_cd"
+                    android:padding="@dimen/dimen8"
+                    android:src="@drawable/arrow_right" />
+
+                <com.au.auloktra.views.AULeadBars
+                    android:layout_below="@id/cross_sell_sub"
+                    android:layout_marginTop="@dimen/dimen8"
+                    android:id="@+id/bar_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <include
+            android:id="@+id/leads_assigned_card"
+            layout="@layout/home_content_card" />
+
+        <include
+            android:id="@+id/announcements_card"
+            layout="@layout/home_content_card" />
+
+        <include
+            android:id="@+id/leaderboard_card"
+            layout="@layout/home_content_card" />
+
+    </LinearLayout>
+</layout>

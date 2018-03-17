@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/dimen16"
+        android:paddingLeft="@dimen/dimen16"
+        android:paddingRight="@dimen/dimen16"
+        android:paddingStart="@dimen/dimen16"
+        android:paddingTop="@dimen/dimen16">
+
+        <LinearLayout
+            android:id="@+id/element"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen32"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/rejected_percentage"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen8"
+                android:background="@drawable/rejected_bar" />
+
+            <View
+                android:id="@+id/filler1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen8"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/rejected_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen32"
+                android:layout_marginLeft="@dimen/dimen8"
+                android:layout_marginStart="@dimen/dimen8"
+                android:gravity="center_vertical"
+                android:text="@string/bars_rejected"
+                android:textColor="@color/rejected_bar_colour" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen32"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/not_started_percentage"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen8"
+                android:background="@drawable/not_started_bar" />
+
+            <View
+                android:id="@+id/filler2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen8"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/not_started_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen32"
+                android:layout_marginLeft="@dimen/dimen8"
+                android:layout_marginStart="@dimen/dimen8"
+                android:gravity="center_vertical"
+                android:text="@string/bars_not_started"
+                android:textColor="@color/not_started_bar_colour" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen32"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/pending_percentage"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen8"
+                android:background="@drawable/pending_bar" />
+
+            <View
+                android:id="@+id/filler3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen8"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/pending_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen32"
+                android:layout_marginLeft="@dimen/dimen8"
+                android:layout_marginStart="@dimen/dimen8"
+                android:gravity="center_vertical"
+                android:text="@string/bars_pending"
+                android:textColor="@color/pending_bar_colour" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen32"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/completed_percentage"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen8"
+                android:background="@drawable/completed_bar" />
+
+            <View
+                android:id="@+id/filler4"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen8"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/completed_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen32"
+                android:layout_marginLeft="@dimen/dimen8"
+                android:layout_marginStart="@dimen/dimen8"
+                android:gravity="center_vertical"
+                android:text="@string/bars_completed"
+                android:textColor="@color/completed_bar_colour" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dimen8"
+            android:background="@drawable/divider_home" />
+
+        <TextView
+            android:id="@+id/total_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/dimen8"
+            android:text="@string/bars_total"
+            android:textColor="@color/au_text_dark"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</layout>
